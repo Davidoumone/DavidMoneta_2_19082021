@@ -1,0 +1,57 @@
+/*body*/
+html,
+body {
+  font-family: "Raleway", sans-serif;
+}
+/*la barre de navigation*/
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100px;
+}
+
+.navbar img {
+  margin-bottom: 10px;
+}
+
+.items {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 28em;
+}
+
+.items li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  width: 140px;
+  height: 99px;
+}
+
+.bordurenav {
+  border-top: 1px solid transparent;
+}
+
+.bordurenav:hover {
+  border-top: 1px solid #0065fc;
+  cursor: pointer;
+}
+
+.bordurenav:hover > a {
+  color: #0065fc;
+}
+
+.item1-2 {
+  color: black;
+  text-decoration: none;
+}
+
+.item3 {
+  color: blue;
+  text-decoration: none;
+}
+
+ 
