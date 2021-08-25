@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -11,25 +11,40 @@
       href="https://fonts.googleapis.com/css2?family=Raleway&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://kit-free.fontawesome.com/releases/latest/css/free-v4-shims.min.css"
+      media="all"
+      rel="stylesheet"
+    />
+    <link
+      href="https://kit-free.fontawesome.com/releases/latest/css/free-v4-font-face.min.css"
+      media="all"
+      rel="stylesheet"
+    />
+    <link
+      href="https://kit-free.fontawesome.com/releases/latest/css/free.min.css"
+      media="all"
+      rel="stylesheet"
+    />
     <title>reservia</title>
   </head>
   <body>
-    <header>
-      <nav class="navbar">
-        <img
-          src="C:\Users\davmo\Documents\Openclassroom_formation\Projet_2_Reservia\DavidMoneta_2_19082021\images\logo\Reservia.svg"
-          alt="logo"
-          width="120px"
-          height="50px"
-        />
-        <ul class="items">
-          <li class="bordurenav">
-            <a class="item1-2" href="#">Hébergements</a>
-          </li>
-          <li class="bordurenav"><a class="item1-2" href="#">Activités</a></li>
-          <li class="bordurenav"><a class="item3" href="#">s'inscrire</a></li>
-        </ul>
-      </nav>
-    </header>
+    <div id="main">
+      <!-- Header -->
+      <header class="flex">
+        <div class="logo">
+          <img src="images\logo\Reservia.svg" alt="Reservia" />
+        </div>
+
+        <!-- Navigation -->
+        <nav class="flex">
+          <ul class="flex">
+            <li><a href="#hotelsAnchor">Hébergements</a></li>
+            <li><a href="#activitiesAnchor">Activités</a></li>
+          </ul>
+        </nav>
+        <a href="" class="signUp">S'inscrire</a>
+      </header>
+    </div>
   </body>
 </html>

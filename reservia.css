@@ -1,55 +1,66 @@
-/*body*/
-html,
-body {
-  font-family: "Raleway", sans-serif;
-}
-/*la barre de navigation*/
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 100px;
+/* General */
+
+body{
+  margin: 0;
+  box-sizing: border-box; 
+  font-family: 'Raleway', sans-serif;
 }
 
-.navbar img {
-  margin-bottom: 10px;
+#main{
+  margin: 0 50px 50px;
 }
 
-.items {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 28em;
+ul{
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
 
-.items li {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  list-style: none;
-  width: 140px;
-  height: 99px;
-}
-
-.bordurenav {
-  border-top: 1px solid transparent;
-}
-
-.bordurenav:hover {
-  border-top: 1px solid #0065fc;
-  cursor: pointer;
-}
-
-.bordurenav:hover > a {
-  color: #0065fc;
-}
-
-.item1-2 {
-  color: black;
+a{
   text-decoration: none;
+  color: inherit;
 }
 
-.item3 {
-  color: blue;
-  text-decoration: none;
+h2{
+  font-weight: 700;
+}
+
+.flex{
+  display: flex;
+}
+
+.euros{
+  font-weight: 600;
+}
+
+/* Header */
+
+header{
+  justify-content: space-between;
+  margin-bottom: 35px;
+}
+
+.logo{
+  margin-top: 30px;
+  flex: 1;
+}
+
+nav li{
+  padding-top: 40px;
+}
+
+nav a{
+  padding: 40px 30px 0;
+}
+
+.signUp{
+  color: #0065FC;
+  font-weight: 700;
+  padding: 40px 40px 0;
+}
+
+nav li a:hover{
+  color: #0065FC;
+  border-top: 2px solid #0065FC;
+  padding-top: 38px;
 }
