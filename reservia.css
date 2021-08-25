@@ -3,75 +3,53 @@ html,
 body {
   font-family: "Raleway", sans-serif;
 }
-
-/*hauteur de la balise de navigation*/
-.sizeNav {
-  height: 100px;
-}
-
-/*alignements des elements de la barre de navigation*/
-.alignElements {
+/*la barre de navigation*/
+.navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  height: 100px;
 }
 
-/*taille de la balise ul de la barre de navigation*/
-.sizeUl {
-  width: 45%;
+.navbar img {
+  margin-bottom: 10px;
 }
 
-/*taille des balises li de la barre de navigation + style*/
-.sizeLi {
-  width: 14opx;
-  height: 99px;
-  list-style: none;
+.items {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 28em;
 }
 
-/*positionnement des balises li*/
-.flexcenter {
+.items li {
   display: flex;
   justify-content: center;
   align-items: center;
+  list-style: none;
+  width: 140px;
+  height: 99px;
 }
 
-/*alignement les balises li de la barre de navigation*/
-.alignLi {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-
-/*couleur lien hébergements et Activités de la barre de navigation*/
-.colorLiens1-2 {
-  color: black;
-  text-decoration: none;
-}
-
-/*couleur lien s'inscrire de la barre de navigation*/
-.colorLiens3 {
-  color: blue;
-  text-decoration: none;
-  font-weight: bolder;
-}
-
-/*couleur de la bordure des balises li*/
-.bordureNav {
+.bordurenav {
   border-top: 1px solid transparent;
 }
 
-/*effet hover de la bordure des balises li*/
-.bordureNav:hover {
+.bordurenav:hover {
   border-top: 1px solid #0065fc;
   cursor: pointer;
 }
 
-/*effet hover de la bordure des balises li*/
-.bordureNav:hover > a {
+.bordurenav:hover > a {
   color: #0065fc;
 }
 
-/*marge du logo reservia*/
-.margeLogo {
-  margin-bottom: 23px;
+.item1-2 {
+  color: black;
+  text-decoration: none;
+}
+
+.item3 {
+  color: blue;
+  text-decoration: none;
 }
