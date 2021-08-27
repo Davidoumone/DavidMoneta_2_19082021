@@ -28,23 +28,43 @@
     />
     <title>reservia</title>
   </head>
+
   <body>
-    <div id="main">
+    <div id="Principal-contain">
       <!-- Header -->
-      <header class="flex">
+      <header>
         <div class="logo">
           <img src="images\logo\Reservia.svg" alt="Reservia" />
         </div>
 
         <!-- Navigation -->
-        <nav class="flex">
-          <ul class="flex">
+        <nav class="navbar">
+          <ul>
             <li><a href="#hotelsAnchor">Hébergements</a></li>
             <li><a href="#activitiesAnchor">Activités</a></li>
           </ul>
         </nav>
         <a href="" class="signUp">S'inscrire</a>
       </header>
+
+      <!-- Search-->
+      <div class="search">
+        <h2>Trouvez votre hébergement pour des vacances de rêve</h2>
+        <p>En plein centre ville ou en pleine nature</p>
+        <form class="searchBar" action="#" method="GET">
+          <div class="containerMarker">
+            <i class="fas fa-map-marker-alt"></i>
+          </div>
+          <input
+            type="search"
+            class="searchInput"
+            placeholder="Marseille, France"
+          />
+          <button class="searchButton">
+            <span>Rechercher</span>
+            <i class="fas fa-search"></i>
+          </button>
+          </form>
     </div>
   </body>
 </html>
