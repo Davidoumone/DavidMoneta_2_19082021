@@ -209,6 +209,143 @@ nav li a:hover {
   color: #0065fc;
 }
 
+/* Hotels */
+.containerHotels{
+  display: flex;
+}
+
+.hotels,
+.popular {
+  background-color: #f2f2f2;
+  border-radius: 20px;
+  padding: 40px;
+}
+
+.hotels {
+  flex: 2;
+}
+
+.hotels > h2 {
+  margin: 0;
+}
+
+.hotelsTableau {
+  display: grid;
+  grid-template: repeat(2, 1fr) / repeat(3, 1fr);
+  gap: 30px;
+  margin: 30px 0 50px;
+}
+
+.cadrehotel {
+  display: grid;
+  height: 220px;
+  grid-template-rows: 1fr 40%;
+  box-sizing: border-box;
+  border: 5px solid #fff;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 0 7px #c1c1c1;
+}
+
+.cadrehotel img {
+  width: 100%;
+  height: 126px;
+  object-fit: cover;
+}
+
+.hotelDescription {
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: #fff;
+  padding: 5px 10px;
+  display: flex;
+}
+
+.hotelDescription p {
+  margin: 0;
+}
+
+.hotelétoile {
+  word-spacing: -1ch;
+}
+
+.fa-star {
+  font-size: 0.8rem;
+  letter-spacing: 2px;
+}
+
+.blueStar {
+  color: #0065fc;
+}
+
+.greyStar {
+  color: #f2f2f2;
+}
+
+.showMore {
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+/* Popular */
+
+.popular {
+  flex: 1;
+  margin-left: 3%;
+}
+
+.popularIcone {
+  justify-content: space-between;
+  align-items: baseline;
+  display: flex;
+}
+
+.popularIcone h2 {
+  margin-top: 0;
+  margin-bottom: 25px;
+}
+
+.popularIcone i {
+  font-size: 1.5rem;
+}
+
+.cadrepopulaire {
+  height: 145px;
+  border: 5px solid #fff;
+  border-radius: 15px;
+  margin-bottom: 30px;
+  box-shadow: 0 0 7px #c1c1c1;
+  box-sizing: border-box;
+  overflow: hidden;
+  display: flex;
+}
+
+.cadrepopulaire img {
+  width: 40%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.popularDescription {
+  flex: 1;
+  background-color: #fff;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10px;
+  display: flex;
+}
+
+.hotelName {
+  margin: 0;
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+.popularDescription .hotelName + p {
+  margin-top: 8px;
+  margin-bottom: 0;
+}
+
 /* Tablet version */
 @media only screen and (max-width: 1024px) {
   /* filters - Tablet */
@@ -223,6 +360,41 @@ nav li a:hover {
 
   .filter {
     margin: 0 1rem 1rem 0;
+  }
+
+  /* Hotels - Tablet */
+
+  .hotels {
+    order: 2;
+  }
+
+
+  .containerHotels {
+    flex-direction: column;
+    display: flex;
+  }
+
+  /* Popular - Tablet */
+
+  .popular {
+    margin: 0 0 20px;
+  }
+
+  .cadrepopulaire {
+    height: 180px;
+    display: flex;
+  }
+
+  .popularDescription .hotelName {
+    font-size: 1.4rem;
+  }
+
+  .popularDescription p {
+    font-size: 1.2rem;
+  }
+
+  .popularDescription .fa-star {
+    font-size: 1rem;
   }
 }
 
@@ -319,5 +491,65 @@ nav li a:hover {
   /* filters - Mobile */
   .filters {
     margin-bottom: 12px;
+  }
+
+  /* Hotels - Mobile */
+
+  .cadrehotel {
+    height: 200px;
+  }
+
+  .hotels {
+    padding: 0 20px;
+    background-color: initial;
+  }
+
+  .hotelsTableau {
+    grid-template: repeat(6, 1fr) / 1fr;
+    gap: 15px;
+  }
+
+  .cadrehotel img {
+    height: 116px;
+  }
+
+
+  .hotelDescription p {
+    font-size: 0.9rem;
+  }
+
+  /* Popular - Mobile */
+
+  .popular {
+    border-radius: 0;
+    padding: 40px 20px 30px;
+    margin-bottom: 40px;
+  }
+
+  .cadrepopulaire {
+    height: 145px;
+    margin-bottom: 10px;
+    display: flex;
+  }
+
+  .popularIcone i {
+    font-size: 1.4rem;
+  }
+
+  .hotelName {
+    font-size: 1rem !important;
+  }
+
+  .popularDescription p {
+    font-size: 0.9rem;
+  }
+
+  .popularDescription {
+    padding: 15px 10px 10px 20px;
+  }
+
+  .fa-star {
+    font-size: 0.8rem !important;
+    letter-spacing: 1px;
   }
 }
