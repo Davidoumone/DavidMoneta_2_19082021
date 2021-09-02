@@ -392,6 +392,27 @@ nav li a:hover {
   font-weight: 700;
 }
 
+/* Footer */
+
+footer {
+  display: flex;
+  padding: 40px 50px 50px;
+  background-color: #f2f2f2;
+}
+
+footer div {
+  flex: 1;
+}
+
+footer li {
+  margin-bottom: 15px;
+}
+
+footer a:hover {
+  font-weight: 600;
+  color: #0065fc;
+}
+
 /* Tablet version */
 @media only screen and (max-width: 1024px) {
   /* filters - Tablet */
@@ -461,6 +482,12 @@ nav li a:hover {
 
   .activityDescription {
     font-size: 1.1rem;
+  }
+
+  /* Footer - Tablet */
+
+  footer div {
+    padding: 10px;
   }
 }
 
@@ -635,5 +662,17 @@ nav li a:hover {
   .photo2-6 {
     grid-row-end: span 1;
     grid-column-end: span 1;
+  }
+
+  /* Footer - Mobile */
+
+  footer {
+    display: flex;
+    flex-direction: column;
+    padding: 45px 30px;
+  }
+
+  footer div {
+    padding: 0;
   }
 }
