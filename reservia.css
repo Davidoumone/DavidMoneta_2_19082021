@@ -265,7 +265,7 @@ nav li a:hover {
   margin: 0;
 }
 
-.hotelétoile {
+.hotel-etoile {
   word-spacing: -1ch;
 }
 
@@ -348,7 +348,7 @@ nav li a:hover {
 
 /* Activités */
 
-.activitéTableau {
+.activiteTableau {
   display: grid;
   grid-template: repeat(12, 1fr) / repeat(4, 1fr);
   gap: 37.5px;
@@ -368,7 +368,7 @@ nav li a:hover {
   grid-row-end: span 6;
 }
 
-.cadreactivités {
+.cadre-activites {
   display: grid;
   grid-template-rows: 1fr 50px;
   height: 100%;
@@ -378,7 +378,7 @@ nav li a:hover {
   box-shadow: 0 0 7px #c1c1c1;
 }
 
-.cadreactivités img {
+.cadre-activites img {
   width: 100%;
   object-fit: cover;
   height: 100%;
@@ -465,11 +465,11 @@ footer a:hover {
 
   /* Activités - Tablet */
 
-  .activitéTableau {
+  .activiteTableau {
     height: auto;
   }
 
-  .cadreactivités {
+  .cadre-activites {
     height: 190px;
   }
 
@@ -647,11 +647,11 @@ footer a:hover {
 
   /* Activités - Mobile */
 
-  .Activités {
+  .Activites {
     margin: 55px 20px 45px;
   }
 
-  .activitéTableau {
+  .activiteTableau {
     grid-template: repeat(6, 1fr) / 1fr;
     grid-auto-flow: initial;
     gap: 24px;
