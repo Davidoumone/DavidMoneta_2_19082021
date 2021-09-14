@@ -356,18 +356,34 @@ nav li a:hover {
   grid-auto-flow: column;
 }
 
-.photo1-4 {
+.photo1 {
   grid-row-end: span 13;
 }
 
-.photo2-6 {
+.photo2 {
   grid-row-end: span 7;
 }
 
-.photo3-5 {
+.photo3 {
   grid-row-end: span 6;
 }
 
+.photo4 {
+  grid-row-end: span 13;
+}
+
+.photo5 {
+  grid-row-end: span 6;
+}
+
+.photo6 {
+  grid-row-end: span 7;
+}
+
+.activite-image {
+  grid-row-start: 1;
+  grid-row-end: 5;
+}
 .cadre-activites {
   display: grid;
   grid-template-rows: 1fr 50px;
@@ -414,7 +430,7 @@ footer a:hover {
 }
 
 /* Tablet version */
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 768px) {
   /* filters - Tablet */
   .filters {
     flex-direction: column;
@@ -473,9 +489,17 @@ footer a:hover {
     height: 190px;
   }
 
-  .photo1-4,
-  .photo3-5,
-  .photo2-6 {
+  .activite-image1-4 {
+    grid-row-start: 1;
+    grid-row-end: 5;
+  }
+
+  .photo1,
+  .photo2,
+  .photo3,
+  .photo4,
+  .photo5,
+  .photo6 {
     grid-row-end: span 4;
     grid-column-end: span 2;
   }
@@ -657,9 +681,12 @@ footer a:hover {
     gap: 24px;
   }
 
-  .photo1-4,
-  .photo3-5,
-  .photo2-6 {
+  .photo1,
+  .photo2,
+  .photo3,
+  .photo4,
+  .photo5,
+  .photo6 {
     grid-row-end: span 1;
     grid-column-end: span 1;
   }
