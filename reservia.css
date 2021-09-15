@@ -431,7 +431,7 @@ footer a:hover {
   color: #0065fc;
 }
 
-@media only screen and (max-width: 1280px) {
+@media only screen and (max-width: 1024px) {
   .hotels {
     flex: 1.5;
   }
