@@ -431,6 +431,17 @@ footer a:hover {
   color: #0065fc;
 }
 
+@media only screen and (max-width: 1280px) {
+  .hotels {
+    flex: 1.5;
+  }
+
+  .hotelsTableau {
+    grid-template: repeat(3, 1fr) / repeat(2, 1fr);
+    margin: 30px 0;
+  }
+}
+
 /* Tablet version */
 @media only screen and (max-width: 768px) {
   /* filters - Tablet */
