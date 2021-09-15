@@ -25,10 +25,6 @@ h2 {
   font-weight: 700;
 }
 
-.flex {
-  display: flex;
-}
-
 .euros {
   font-weight: 600;
 }
@@ -394,10 +390,16 @@ nav li a:hover {
   box-shadow: 0 0 7px #c1c1c1;
 }
 
-.cadre-activites img {
+.activite-image1-4 img {
   width: 100%;
   object-fit: cover;
   height: 100%;
+}
+
+.activite-image img {
+  width: 100%;
+  object-fit: cover;
+  height: 90%;
 }
 
 .activityDescription {
@@ -487,6 +489,12 @@ footer a:hover {
 
   .cadre-activites {
     height: 190px;
+  }
+
+  .activite-image1-4 img {
+    width: 100%;
+    object-fit: cover;
+    height: 90%;
   }
 
   .activite-image1-4 {
