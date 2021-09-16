@@ -1,7 +1,7 @@
 /* General */
 
 body {
-  max-width: 1440px;
+  max-width: 1500px;
   margin: auto;
   box-sizing: border-box;
   font-family: "Raleway", sans-serif;
@@ -394,7 +394,7 @@ nav li a:hover {
 .activite-image1-4 img {
   width: 100%;
   object-fit: cover;
-  height: 100%;
+  height: 98%;
 }
 
 .activite-image img {
@@ -409,6 +409,7 @@ nav li a:hover {
   padding-left: 10px;
   font-size: 1.1rem;
   font-weight: 700;
+  padding-bottom: 10px;
 }
 
 /* Footer */
@@ -536,7 +537,7 @@ footer a:hover {
 }
 
 /* Mobile version */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 640px) {
   /* General */
 
   #Principal-contain {
